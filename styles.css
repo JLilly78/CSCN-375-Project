@@ -1,0 +1,99 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.header
+{
+    font-size: medium;
+}
+
+.upperbar{
+    background-color: #222222;
+    display: grid;
+    height: 44px;
+}
+
+.lu {
+    margin-left: 20px;
+    margin-top: 9px;
+    max-width: 28px;
+}
+
+.app-nav-bar{
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top:12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-shadow: 0px -4px 13px #222222;
+    position: relative;
+}
+
+.cheat-image{
+    margin-top: 12px;
+    margin-left: 72px;
+    margin-bottom: 12px;
+    height: 33px;
+    width: auto;
+}
+
+.link-container{
+    margin-left: 40px;
+    align-self: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.link-container a{
+    text-decoration: none;
+}
+
+.link-container a:link{
+    color: #686a6f;
+}
+
+.link-container a:visited{
+    color: #686a6f;
+}
+
+.link-container a:hover{
+    color: #256ec1;
+}
+
+.main-area {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+
+.present {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    padding: 55px 0.6rem;
+    width: 450px;
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px 2px #dadada;
+}
+
+.image-present {
+    align-self: center;
+    justify-self: center;
+    width: 400px;
+}

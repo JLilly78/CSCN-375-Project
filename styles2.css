@@ -1,0 +1,171 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    background-color: #f1f1f1;
+}
+
+.header
+{
+    font-size: medium;
+}
+
+.upperbar{
+    background-color: #222222;
+    display: grid;
+    height: 44px;
+}
+
+.lu {
+    margin-left: 20px;
+    margin-top: 9px;
+    max-width: 28px;
+}
+
+.app-nav-bar{
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top:12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-shadow: 0px -4px 13px #222222;
+    position: relative;
+}
+
+.cheat-image{
+    margin-top: 12px;
+    margin-left: 72px;
+    margin-bottom: 12px;
+    height: 33px;
+    width: auto;
+}
+
+.link-container{
+    margin-left: 40px;
+    align-self: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-bottom: solid #256ec1 2px;
+}
+
+.link-container a{
+    text-decoration: none;
+    color: #256ec1;
+}
+
+.link-container a:visited{
+    color: #256ec1;
+}
+
+.link-container a:hover{
+    color: #256ec1;
+}
+
+.main-area {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+
+.present {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    padding: 55px 0.6rem;
+    width: 1200px;
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px 2px #dadada;
+}
+
+.image-present {
+    align-self: center;
+    justify-self: center;
+    width: 400px;
+}
+
+.ai-title {
+    font-size: 2.7rem;
+    font-weight: 500;
+    color:#222222;
+    align-self: center;
+    margin-bottom: 54px;
+}
+
+.tool-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.conversation-container {
+    display: flex;
+    flex-direction: row;
+    height: 430px;
+    background-color: #dadada;
+    border: solid 2px #1b2c56;
+    border-radius: 24px / 24px;
+}
+
+.intro-convo-box {
+    padding: 20px;
+    border-radius: 12px / 12px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    max-width: 50%;
+    min-width: 40%;
+    align-self: flex-start;
+    background-color: #1b2c56;
+
+}
+
+.convo-text {
+    margin: 10px;
+    color: #f1f1f1;
+    font-size: 2rem;
+}
+
+.response-convo-box {
+    padding: 20px;
+    border-radius: 12px / 12px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    max-width: 50%;
+    align-self: flex-start;
+    background-color: #7193b9;
+}
+
+.response-convo-box button {
+    display: inline-block;
+    border: none;
+    border-radius: 4px /4px;
+    padding: 1rem 2rem;
+    margin: 4px;
+    text-decoration: none;
+    background: #0e2b4e2c;
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+}
+
+.response-convo-box button:hover {
+    background: #124d968f;
+}
