@@ -1,12 +1,13 @@
 var bot_text = document.getElementById("convotext");
-
+var text_box_inner = document.getElementById("textboxinner");
 window.onload = function start(){
     bot_text = document.getElementById("convotext");
-};
+    text_box_inner = document.getElementById("textboxinner");
 
 
 
-function changetext(chosenQuery) {
+
+function changetext(chosenQuery) { //change the parameter to a string. make that string the textContent.
     if (chosenQuery == 1) {
         bot_text.textContent = "OK, here is a calendar showing the classes you've chosen \n (This is where you would see a calendar, if I had one)";
     }
@@ -18,3 +19,23 @@ function changetext(chosenQuery) {
     }
 
 }
+
+text_box_inner.addEventListener("keypress", e => {
+    if (e.key === "Enter") {
+        var input = text_box_inner.value;
+        if (input.includes("calendar")) {
+            changetext(1);
+        }
+        else if (input.includes("recommended")) {
+            changetext(2);
+        }
+        else if (input.includes("ideal order")) {
+            changetext(3);
+        }
+        else {
+            bot_text.textContent = "What???";
+        }
+    }
+});
+
+};
