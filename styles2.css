@@ -132,6 +132,11 @@ html, body {
 
 }
 
+.intro-convo-box img{
+    display: none;
+    max-width: 400px;
+}
+
 .convo-text {
     margin: 10px;
     color: #f1f1f1;
