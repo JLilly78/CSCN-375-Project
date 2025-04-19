@@ -112,7 +112,7 @@ html, body {
 
 .conversation-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 430px;
     background-color: #dadada;
     border: solid 2px #1b2c56;

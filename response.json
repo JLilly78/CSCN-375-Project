@@ -1,22 +1,85 @@
 {
     "response1": [
-        {
-            "id": 1,
-            "text": "Hello"
-        },
-        {
-            "id": 2,
-            "text": "Hello again"
-        }
-        
+      { "id": 1, "text": "Take these classes:" },
+      { "id": 2, "text": "I would recommend you take these classes:..." },
+      { "id": 3, "text": "Here’s a strong semester lineup for you." },
+      { "id": 4, "text": "Based on your major, these courses make sense:" },
+      { "id": 5, "text": "Try taking a mix of core and elective courses like these:" },
+      { "id": 6, "text": "Here’s a list of suggested classes for this term:" },
+      { "id": 7, "text": "Let’s get you enrolled in these:" }
     ],
     "response2": [
-        {
-            "id": 1,
-            "text": "Sup"
-        }
+      { "id": 1, "text": "Right now." },
+      { "id": 2, "text": "You should take CSCN 375 as soon as you meet the prereqs." },
+      { "id": 3, "text": "Ideally, you’d take it in your junior year." },
+      { "id": 4, "text": "Plan for it around your 5th or 6th semester." },
+      { "id": 5, "text": "It fits best in your third year if you're on track." },
+      { "id": 6, "text": "Don’t wait too long—CSCN 375 is a key upper-level course." },
+      { "id": 7, "text": "If you’ve taken CSCN 340, you’re ready." }
+    ],
+    "response3": [
+      { "id": 1, "text": "Most students say CSCN 434 is the hardest." }, 
+      { "id": 2, "text": "Many find Operating Systems to be a challenge." },
+      { "id": 3, "text": "Compilers and Algorithms tend to be brutal." },
+      { "id": 4, "text": "It depends, but advanced theory classes usually top the list." },
+      { "id": 5, "text": "CSCN 443 and CSCN 215 are both heavy hitters." },
+      { "id": 6, "text": "Ask around—‘hardest’ is subjective, but there are definitely tough ones." },
+      { "id": 7, "text": "Expect the upper-division core classes to test you the most." }
+    ],
+    "response4": [
+      { "id": 1, "text": "They may be backed up with appointments—try calling." },
+      { "id": 2, "text": "Some advisors prefer phone or drop-in hours over email." },
+      { "id": 3, "text": "Check if you're emailing the right address or department." },
+      { "id": 4, "text": "Try following up with a brief and clear message." },
+      { "id": 5, "text": "They may be waiting for a form or hold to clear first." },
+      { "id": 6, "text": "Sometimes it just takes a day or two—don’t sweat it." },
+      { "id": 7, "text": "Try booking an appointment directly through the student portal." }
+    ],
+    "response5": [
+      { "id": 1, "text": "Hi! I can help you build schedules, choose classes, and plan your degree." },
+      { "id": 2, "text": "Type a question like 'What should I take next semester?' to get started." },
+      { "id": 3, "text": "Need help picking electives, avoiding 8am classes, or graduating on time? I got you." },
+      { "id": 4, "text": "Use simple prompts like 'Show me easy electives' or 'How many credits do I need?'" },
+      { "id": 5, "text": "You can ask about your schedule, majors, minors, or even professor recommendations." },
+      { "id": 6, "text": "Not sure what to ask? Try 'What classes fit my degree?' or 'How can I graduate early?'" },
+      { "id": 7, "text": "This bot helps you make smart choices with your class schedule—ask anything!" }
+    ],
+    "response6": [],
+    "response7": [
+      { "id": 1, "text": "Hello there!" },
+      { "id": 2, "text": "Sure thing—let’s make your semester smoother." },
+      { "id": 3, "text": "Let’s balance things out. No burnout here." },
+      { "id": 4, "text": "Mixing chill classes with challenging ones? I got you." },
+      { "id": 5, "text": "Strategizing a balanced schedule—smart move." },
+      { "id": 6, "text": "Here’s a class list with a good workload balance:" },
+      { "id": 7, "text": "This combo should keep things manageable but engaging." }
+    ],
+    "response8": [
+      { "id": 1, "text": "Here are some classes with seats still open:" },
+      { "id": 2, "text": "You still have time! These courses aren’t full yet:" },
+      { "id": 3, "text": "Based on current availability, try these:" },
+      { "id": 4, "text": "Classes still open as of now include:" },
+      { "id": 5, "text": "You might want to grab one of these before they fill:" },
+      { "id": 6, "text": "These are the most popular classes that still have spots:" },
+      { "id": 7, "text": "Here’s what’s open and fits your schedule:" }
+    ],
+    "response9": [
+      { "id": 1, "text": "Let me check your progress so far..." },
+      { "id": 2, "text": "Looks like you’re on track, but let’s double-check your credits." },
+      { "id": 3, "text": "You’re doing great—just a few more requirements to go." },
+      { "id": 4, "text": "Hmm, you might need to shift things around to stay on track." },
+      { "id": 5, "text": "You're close! Let’s figure out your remaining requirements." },
+      { "id": 6, "text": "Here's a quick audit of your progress:" },
+      { "id": 7, "text": "Let’s break down what you’ve taken vs what’s left." }
+    ],
+    "response10": [
+      { "id": 1, "text": "Based on your major, here are some popular minor options:" },
+      { "id": 2, "text": "These minors complement your current track really well:" },
+      { "id": 3, "text": "Here’s a list of minors that can boost your job prospects:" },
+      { "id": 4, "text": "Interested in tech, business, or design? These could be great minors:" },
+      { "id": 5, "text": "Let’s find something that fits your interests and strengthens your resume." },
+      { "id": 6, "text": "These minors are easy to pair with your major:" },
+      { "id": 7, "text": "Want to stand out? These minors could give you an edge." }
     ]
-
-
-    
-}
+  }
+  
