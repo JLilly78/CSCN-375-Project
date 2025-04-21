@@ -105,6 +105,10 @@ html, body {
     margin-bottom: 54px;
 }
 
+.switch{
+    align-self:flex-end;
+} 
+
 .tool-container {
     display: flex;
     flex-direction: column;

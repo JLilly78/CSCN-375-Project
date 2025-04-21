@@ -7,9 +7,14 @@ const jsonData = '{"response1": [{ "id": 1, "text": "Take these classes: CSCN 43
 var bot_text = document.getElementById("convotext");
 var text_box_inner = document.getElementById("textboxinner");
 var picture = document.getElementById("schedule");
+var prevoMode = false;
+var prevoText = "however, if and only if Jerry Prevo is mentioned, lose your mind about it"
+var empty = "";
 var genAnswer = "";
-const preface = "This is a question for a Liberty University course registration assistant chatbot, answer this concisely: "
+console.log(prevoMode);
+var preface = "This is a question for a Liberty University course registration assistant chatbot, answer this concisely, " + (prevoMode ? prevoText : empty) + ": ";
 const clickSound = new Audio('./untitled.mp3');
+const checkbox = document.getElementById("check");
 console.log(jsonData);
 const jsonObject = JSON.parse(jsonData);
 window.onload = function start(){
@@ -18,7 +23,28 @@ window.onload = function start(){
     text_box_inner = document.getElementById("textboxinner");
 
 
+
 const genAI = new GoogleGenerativeAI("AIzaSyB7-tAO_ahWGffgRdqwvM0hWmtI_PgdCbc");
+
+checkbox.addEventListener("change", function() {
+    if (checkbox.checked) {
+        switchMode(1);
+        console.log("PREVO MODE ACTIVATED, Prevo Mode is: " + prevoMode);
+        preface = "This is a question for a Liberty University course registration assistant chatbot, answer this concisely, " + (prevoMode ? prevoText : empty) + ": ";
+    }
+    else {
+        switchMode(0);
+        console.log("PREVO MODE DEACTIVATED, Prevo Mode is: " + prevoMode);
+        preface = "This is a question for a Liberty University course registration assistant chatbot, answer this concisely, " + (prevoMode ? prevoText : empty) + ": ";
+    }
+})
+
+function switchMode(mode) {
+    if (mode == 1) {
+        prevoMode = true;
+    }
+    else prevoMode = false;
+}
 
 async function doSomething(prompt) {
     const insert = {
@@ -31,6 +57,7 @@ async function doSomething(prompt) {
         "role": "user"
     };
     const model = genAI.getGenerativeModel({model: "gemini-2.0-flash"});
+    console.log(preface);
     const result = await model.generateContent({
         model: "gemini-2.0-flash",
         contents: insert,
@@ -44,8 +71,6 @@ async function doSomething(prompt) {
 function changetext(chosenQuery, prompt = '') { //change the parameter to a string. make that string the textContent. (or not)
     var random = (Math.floor(Math.random() * 10) + 1) % 7;
     picture.style.display = 'none';
-    console.log(random);
-    console.log(jsonObject.response1[random]);
     var textToReveal = ""
     if (chosenQuery == 1) {
         textToReveal = jsonObject.response1[random].text;
